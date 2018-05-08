@@ -1,8 +1,6 @@
-/***********
+/*************
     GLOBAL
-***********/
-
-
+*************/
 html {
     display: flex;
     flex-wrap: wrap;
@@ -14,12 +12,9 @@ html {
     margin: auto;
 }
 
-
-
-
-/************
+/*************
     HEADER
-************/
+*************/
 header {
     border-bottom: 4px solid #000000;
     width: 100%;
@@ -49,9 +44,9 @@ header {
     padding: 15px;
 }
 
-/************
+/**********
     HERO
-************/
+**********/
 #hero-container {
     display: flex;
     flex-wrap: wrap;
@@ -79,9 +74,9 @@ header {
 }
 
 
-/*************
+/********************
     FEATURED WORK
-*************/
+********************/
 #featured-work {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +88,7 @@ header {
     background-color: #d0d6d8;
 }
 
-h5 {
+h3 {
     text-align: center;
 }
 .card-container {
@@ -115,9 +110,9 @@ h5 {
 }
 
 
-/***********
+/*************
     FOOTER
-***********/
+*************/
 
 .footer-container {
     display: flex;
@@ -130,9 +125,9 @@ h5 {
 }
 
 
-/************
+/****************
     RESPONSIVE
-************/
+****************/
 
 @media screen and (min-width: 375px) {
     html,
@@ -180,37 +175,29 @@ h5 {
 }
 
 @media screen and (min-width: 700px) {
-
     html,
     #hero-container,
     #featured-work,
     .card img {
-    max-width: 100%;
-    background-color: #fff;
+        max-width: 100%;
     }
 
+    .logo-container, .title-container {
+        padding: 30px;
+    }
+
+    }
     .hero figure img {
         max-width: 700px;
         padding: 20px;
     }
+
     #featured-work {
-        display: flex;
+        display: inline-block;
         flex-wrap: wrap;
         text-align: center;
         flex-direction: row;
-        background-color: #fff;
         max-width: 100%;
-    }
-
-    h5 {
-        display: flex;
-        flex-wrap: nowrap;
-        position: relative;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        max-width: 100%;
-
     }
 
     .card-container {
@@ -218,7 +205,6 @@ h5 {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        overflow: hidden;
         padding: 50px;
         max-width: 100%;
         max-height: auto;
